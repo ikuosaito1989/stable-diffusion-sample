@@ -52,11 +52,12 @@ negative_prompt = (
     "cropped, closeup, missing legs, missing feet, blurry, distorted hands, distorted feet, watermark"
 )
 
-output_path = "images/aj1_japanese_man4.png"
+output_path = "images/aj1_japanese_man11.png"
 
 # ==== モデル読み込み ====
 print("🔁 Loading model...")
-pipe = StableDiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5")
+pipe = pipe = StableDiffusionPipeline.from_pretrained("SG161222/Realistic_Vision_V5.1_noVAE")
+
 pipe = pipe.to("cpu")
 
 pipe.scheduler = pipe.scheduler.__class__.from_config(pipe.scheduler.config)
