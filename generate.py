@@ -3,9 +3,9 @@ import torch
 import os
 
 # ==== 設定 ====
-prompt = "a 20-year-old Japanese man wearing Air Jordan 1 sneakers, white t-shirt, dark blue jeans, full body, standing, realistic photo, street fashion, urban background"
+prompt = "20 year old 175cm Japanese male wearing Air Jordan 1, white t-shirt, full body, standing, realistic photo, street fashion, urban background, mosaic face, brown hair"
 negative_prompt = "blurry, lowres, ugly face, distorted body, bad anatomy, watermark, text"
-output_path = "aj1_japanese_man.png"
+output_path = "images/aj1_japanese_man2.png"
 
 # ==== モデル読み込み ====
 print("🔁 Loading model...")
