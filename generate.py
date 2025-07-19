@@ -4,13 +4,13 @@ import os
 
 # ==== 設定 ====
 prompt = (
-    "A full-body photo of a 20-year-old Japanese man standing against an urban wall, "
-    "wearing Air Jordan 1 sneakers, white t-shirt, slim dark jeans, street fashion, "
-    "175cm tall, pixelated or blurred face, brown hair, realistic photo"
+    "Full-body photo of a 20-year-old Japanese man wearing Air Jordan 1 sneakers, "
+    "white oversized t-shirt, dark slim jeans, standing against a wall, street fashion, "
+    "realistic photo, face obscured or not visible, looking away, low angle"
 )
 
 negative_prompt = (
-    "blurry, lowres, ugly face, distorted body, bad anatomy, watermark, text, cropped, closeup"
+    "closeup, blurry, cropped, watermark, distorted legs, ugly face, looking at camera, face visible"
 )
 
 output_path = "images/aj1_japanese_man4.png"
