@@ -39,10 +39,8 @@ def mosaic_face(pil_image):
 
 # ==== 設定 ====
 prompt = (
-    "Full-body photo of a 20-year-old Japanese man, standing in front of a wall, "
-    "wearing white and black oversized t-shirt, slim pants, and Air Jordan 1 sneakers. "
-    "His face is blurred or turned away. Realistic street fashion, visible shoes, full legs, "
-    "lower body and feet included, detailed footwear, full body visible, high detail, low angle"
+    "Full body photo of a 175cm 20 year old Japanese male wearing Air Jordan 1 sneakers"
+    "street fashion realistic photo full body in frame"
 )
 
 negative_prompt = (
@@ -64,7 +62,7 @@ print("🎨 Generating image...")
 image = pipe(
     prompt=prompt,
     negative_prompt=negative_prompt,
-    height=768,
+    height=904,
     width=512,
     guidance_scale=7.5,
     num_inference_steps=40
