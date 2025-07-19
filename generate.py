@@ -15,7 +15,9 @@ def mosaic_face(pil_image):
     )
 
     faces = face_cascade.detectMultiScale(
-        gray, scaleFactor=1.1, minNeighbors=4
+        gray,
+        scaleFactor=1.05,
+        minNeighbors=3
     )
 
     # 面積が大きい顔だけを対象にする（最も大きなもの1つ）
@@ -24,9 +26,10 @@ def mosaic_face(pil_image):
         faces = sorted(faces, key=lambda r: r[2] * r[3], reverse=True)
 
         for (x, y, w, h) in faces:
+            print(f"Detected face: {x}, {y}, {w}, {h}")
             # 最小サイズ制限（小さすぎる領域はスキップ）
-            if w < 50 or h < 50:
-                continue
+            # if w < 50 or h < 50:
+            #     continue
 
             # 顔部分を縮小→拡大でモザイク化
             face = image[y:y+h, x:x+w]
