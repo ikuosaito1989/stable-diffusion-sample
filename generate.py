@@ -4,17 +4,16 @@ from face_mosaic_mediapipe import mosaic_face
 
 # ==== 設定 ====
 prompt = (
-    "Full body photo of a 20 year old Japanese male, 175cm 66kg, "
-    "T-shirt, slim pants, "
-    "Real street fashion, visible shoes, full legs, "
-    "lower body and feet included, detailed footwear, full body visible, high detail, low angle"
+    "Full body photo of a handsome 20 year old Japanese male, 175cm 66kg, "
+    "clean skin, symmetrical face, sharp jawline, styled hair, wearing a black T-shirt, wide pants, Nike sneakers, "
+    "K-pop idol style, model-like proportions, street fashion, highly detailed, full body in frame, low angle"
 )
 
 negative_prompt = (
     "cropped, closeup, missing legs, missing feet, blurry, distorted hands, distorted feet, watermark"
 )
 
-output_path = "images/aj1_japanese_man13.png"
+output_path = "images/aj1_japanese_man15.png"
 
 # ==== モデル読み込み ====
 print("🔁 Loading model...")
