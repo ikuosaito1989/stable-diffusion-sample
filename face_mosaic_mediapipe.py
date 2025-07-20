@@ -8,7 +8,7 @@ def mosaic_face(pil_image):
     h, w, _ = image.shape
 
     mp_face = mp.solutions.face_detection
-    face_detection = mp_face.FaceDetection(model_selection=1, min_detection_confidence=0.5)
+    face_detection = mp_face.FaceDetection(model_selection=1, min_detection_confidence=0.3)
 
     results = face_detection.process(cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
 
