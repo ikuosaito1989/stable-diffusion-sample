@@ -27,6 +27,5 @@ def mosaic_face(pil_image):
             face = cv2.resize(face, (10, 10), interpolation=cv2.INTER_LINEAR)
             face = cv2.resize(face, (width, height), interpolation=cv2.INTER_NEAREST)
             image[y:y+height, x:x+width] = face
-            break  # 最初の1人だけでOKなら break
 
     return Image.fromarray(image)
