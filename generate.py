@@ -4,16 +4,17 @@ from face_mosaic_mediapipe import mosaic_face
 
 # ==== 設定 ====
 prompt = (
-    "Full body photo, handsome, 25 year old, Japanese male, golden blonde hair, 170cm, 70kg, "
-    "symmetrical face, styled hair, strong facial features, medium length hair, black t-shirt, blue wide pants, wearing Nike high cut sneakers,"
-    "urban background, model like proportions, Detailed photo, full body in frame, low angle"
+    "Full body photo, handsome, 25 year old, Japanese man, golden blonde hair, 170cm, 65kg, "
+    "short length hair, t-shirt, wide pants, wearing Nike high cut sneakers, "
+    "model like proportions, Detailed photo, full body in frame, low angle, "
+    "urban background, city street, buildings, pavement, natural lighting, "
 )
 
 negative_prompt = (
     "cropped, closeup, missing legs, missing feet, blurry, distorted hands, distorted feet, watermark"
 )
 
-output_path = "images/aj1_japanese_man19.png"
+output_path = "images/aj1_japanese_man20.png"
 
 # ==== モデル読み込み ====
 print("🔁 Loading model...")
@@ -29,8 +30,8 @@ print("🎨 Generating image...")
 image = pipe(
     prompt=prompt,
     negative_prompt=negative_prompt,
-    height=904,
-    width=512,
+    height=1000,
+    width=600,
     guidance_scale=7.5,
     num_inference_steps=40
 ).images[0]
