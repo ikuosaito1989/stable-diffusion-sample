@@ -4,15 +4,15 @@ from face_mosaic_recognition import mosaic_face
 
 # ==== 設定 ====
 prompt = (
-    "Full body photo, fashionable and handsome 25 year old Japanese man, "
-    "golden blonde short hairstyle, summer fashion, street snap style, natural lighting"
+    "Full body photo, fashionable and handsome 30 year old Japanese man, 165cm tall, 80kg, "
+    "brown hairstyle, winter fashion, black jacket, blue pants, street snap style, natural lighting"
 )
 
 negative_prompt = (
     "cropped, closeup, missing legs, missing feet, blurry, distorted hands, distorted feet, watermark"
 )
 
-output_path = "images/aj1_japanese_man25.png"
+output_path = "images/aj1_japanese_man28.png"
 
 # ==== モデル読み込み ====
 print("🔁 Loading model...")
