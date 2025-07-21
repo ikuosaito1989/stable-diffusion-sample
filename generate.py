@@ -1,18 +1,20 @@
 from diffusers import StableDiffusionPipeline
 import os
 from face_mosaic_recognition import mosaic_face
+import uuid
 
 # ==== 設定 ====
 prompt = (
-    "Full body photo, fashionable and handsome 30 year old Japanese man, 165cm tall, 80kg, "
-    "brown hairstyle, winter fashion, black jacket, blue pants, street snap style, natural lighting"
+    "Full body photo, Japanese man, street style, "
+    "t-shirt, loose pants, sneakers, "
+    "city street background, natural lighting, full-body composition"
 )
 
 negative_prompt = (
     "cropped, closeup, missing legs, missing feet, blurry, distorted hands, distorted feet, watermark"
 )
 
-output_path = "images/aj1_japanese_man28.png"
+output_path = f"images/{uuid.uuid4().hex}.png"
 
 # ==== モデル読み込み ====
 print("🔁 Loading model...")
